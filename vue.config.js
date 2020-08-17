@@ -3,6 +3,7 @@ const AntDesignThemePlugin = require('antd-theme-webpack-plugin');
 const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV)
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const productionGzipExtensions = /\.(js|css|json|txt|html|ico|svg)(\?.*)?$/i
+const webpack = require('webpack')
 
 
 
@@ -39,6 +40,10 @@ module.exports = {
         gifsicle: { interlaced: false },
         webp: { quality: 75 }
     })
+    config
+    .plugin('ignore')
+    .use(new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /zh-cn$/))
+    return config
   },
   configureWebpack: (config) => {
     const plugins =  [themePlugin]

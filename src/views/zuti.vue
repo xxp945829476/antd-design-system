@@ -15,7 +15,7 @@ export default {
       window.less.modifyVars({
         "@primary-color": primaryColor
       });
-      this.$setStorage('themeColor',primaryColor)
+      this.$setStorage('themeColor',primaryColor);
     }
   }
 }

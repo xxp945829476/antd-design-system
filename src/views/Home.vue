@@ -57,7 +57,8 @@ export default {
   },
   mounted(){
     let that = this;
-    window.onresize = debounce(changeClient, 300)//防抖
+    window.addEventListener('resize',debounce(changeClient, 300))//防抖
+    // window.onresize = debounce(changeClient, 300)//防抖
   
     function changeClient(){
         let clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
