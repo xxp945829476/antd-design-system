@@ -58,6 +58,14 @@ var data = [
                 "meta":{
                       
                     },
+            },
+            {
+                "path": '/telescopicList',
+                "name": '伸缩列表',
+                "component": 'system/TelescopicList',
+                "meta":{
+                      
+                    },
             }
       
     ]

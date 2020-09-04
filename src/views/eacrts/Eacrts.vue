@@ -34,7 +34,7 @@ export default {
         }]
     });
     this.resize = debounce(this.resize,300)
-    addListener(this.$refs.echarts_bar,this.resize)
+    // addListener(this.$refs.echarts_bar,this.resize)
     this.$once('hook:beforeDestroy', () => {
       removeListener(this.$refs.echarts_bar,this.resize)
     })

@@ -8,7 +8,9 @@ import base from '@/utils/base';
 import router from './router'
 import store from './store'
 import MenuUtils from '@/utils/MenuUtils'
-
+import VueDraggableResizable from 'vue-draggable-resizable';
+import 'vue-draggable-resizable/dist/VueDraggableResizable.css'
+Vue.component('vue-draggable-resizable', VueDraggableResizable);
 
 Vue.use(Button);
 Vue.use(Layout);
