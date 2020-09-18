@@ -8,6 +8,7 @@
                   <a-input v-model="form.fieldA" placeholder="" />
                 </a-form-model-item>
               </a-col>
+              
               <a-col :md="12" :sm="24">
                   <span class="table-page-search-submitButtons">
                      <a-button type="primary" icon="search" class="search_btn">查询</a-button>
@@ -15,9 +16,6 @@
                   </span>
               </a-col>
             </a-row>
-
-           
-            
           </a-form-model>
       </div>
 

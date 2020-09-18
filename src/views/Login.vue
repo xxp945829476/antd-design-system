@@ -66,6 +66,14 @@ var data = [
                 "meta":{
                       
                     },
+            },
+            {
+                "path": '/tree',
+                "name": '树形控件',
+                "component": 'system/Tree',
+                "meta":{
+                      
+                    },
             }
       
     ]
