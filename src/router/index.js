@@ -31,6 +31,11 @@ const originalPush = VueRouter.prototype.push
     path: '/403',
     name: '403',
     component: () => import('@/views/403.vue')
+  },
+  {
+    path: '/monitoringDisplay',
+    name: 'monitoringDisplay',
+    component: () => import('@/views/MonitoringDisplay.vue')
   }
 ]
 

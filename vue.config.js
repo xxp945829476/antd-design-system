@@ -33,17 +33,17 @@ module.exports = {
   // see https://github.com/staven630/vue-cli4-config/tree/vue-cli3
   // webpack配置
   chainWebpack: (config) => {
-    config.module
-      .rule('images')
-      .use('image-webpack-loader')
-      .loader('image-webpack-loader')
-      .options({
-        mozjpeg: { progressive: true, quality: 65 },
-        optipng: { enabled: false },
-        pngquant: { quality: [0.65, 0.9], speed: 4 },
-        gifsicle: { interlaced: false },
-        webp: { quality: 75 }
-    })
+    // config.module
+    //   .rule('images')
+    //   .use('image-webpack-loader')
+    //   .loader('image-webpack-loader')
+    //   .options({
+    //     mozjpeg: { progressive: true, quality: 65 },
+    //     optipng: { enabled: false },
+    //     pngquant: { quality: [0.65, 0.9], speed: 4 },
+    //     gifsicle: { interlaced: false },
+    //     webp: { quality: 75 }
+    // })
     config
     .plugin('ignore')
     .use(new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /zh-cn$/))
