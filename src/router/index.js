@@ -45,7 +45,7 @@ const originalPush = VueRouter.prototype.push
 
 
 const createRouter = () => new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   routes,
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }

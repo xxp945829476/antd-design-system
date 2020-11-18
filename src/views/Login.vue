@@ -74,7 +74,7 @@ var data = [
                 "meta":{
                       
                     },
-            },
+            }
       
     ]
   },
@@ -111,9 +111,6 @@ export default {
     },
     created(){
         this.$removeStorage('subNav');
-
-
-      
     },
     methods:{
         login(){
